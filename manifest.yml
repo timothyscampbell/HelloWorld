@@ -1,0 +1,10 @@
+---
+applications:
+- name: timothyscampbell
+  memory: 512M
+  instances: 1
+  host: timothyscampbell
+  domain: cfapps.io
+  path: target/helloworld-1.0-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_DEFAULT: cloud
